@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.print-area {
+    width: 80%;
+    margin: 2% auto;
+}
+
+.print-area .header {
+    width: 100%;
+    height: 150px;
+    background-color: rgb(28, 30, 37);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 65px;
+    border: 5px solid white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    transition: .5s;
+    user-select: none;
+    filter: grayscale(100%);
+
+}
+
+.header img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, .5);
+}
+
+.header-text {
+    color: white;
+    width: 30%;
+    margin: auto;
+}
+
+.header-text h1 {
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-area {
+    width: 30%;
+    background-color: rgb(236, 236, 236);
+    text-align: center;
+}
+
+.left-area .contact {
+    margin-top: 130px;
+    padding: 0 30px;
+}
+
+.contact h4 {
+    font-size: 30px;
+    font-weight: normal;
+    margin: 20px 0;
+}
+
+.contact h5 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contact span {
+    padding-right: 10px;
+}
+
+.contact p {
+    font-size: 17px;
+}
+
+.skills {
+    margin-top: 50px;
+}
+
+
+
+.skills h1 {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.bars {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 10px;
+    padding: 0 20px;
+}
+
+.bars .bar p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.bar span {
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(192, 191, 191);
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.javascript span {
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(192, 191, 191);
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+.bar span::before {
+position: absolute;
+content: "";
+width: 80%;
+height: 80%;
+background-color: black;
+top: 50%;
+left: 2px;
+transform: translateY(-50%);
+border-radius: 10px;
+}
+
+.bar span::before {
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    }
+
+    .javascript span::before {
+        position: absolute;
+        content: "";
+        width: 60%;
+        height: 60%;
+        background-color: black;
+        top: 50%;
+        left: 2px;
+        transform: translateY(-50%);
+        border-radius: 10px;
+        }
+
+        .soft-skills {
+            margin-top: 60px;
+        }
+
+        .soft-skills ul {
+            padding: 0 70px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .soft-skills ul li {
+            padding-bottom: 10px;
+        }
+    
+
+.right-area {
+    width: 70%;
+    padding: 50px;
+}
+
+.right-area h1 {
+    font-size: 30px;
+    font-weight: normal;
+    color: black;
+}
+
+.right-area h1 span {
+    margin-right: 30px;
+    font-size: 50px;
+    color: lightgray;
+}
+
+.right-area p {
+    padding-left: 70px;
+    text-align: justify;
+    font-size: 17px;
+    color: grey;
+    margin-top: 30px;
+}
+
+.education {
+    margin-top: 30px;
+    
+}
+
+table  {
+   padding-left: 40px;
+   margin-top: 40px;
+   color: grey;
+   
+}
+
+ td {
+    border: solid black;
+    border-color: grey;
+}
+
+td {
+padding: 20px 30px;
+}
+
+.projects {
+    margin-top: 40px;
+}
+
+.projects ul {
+    margin-top: 30px;
+    margin-left: 90px;
+    color: gray;
+
+}
+
+a {
+    color: gray;
+}
+
+.projects ul li {
+    color: gray;
+    padding: 5px 0;
+}
+
+.work-experience {
+    margin-top: 40px;
+}
+
+.last {
+    margin-top: 30px;
+    margin-left: 80px;
+    color: gray;
+}
+
+button {
+    font-size: 25px;
+    padding: 20px 10px;
+    margin: 50px 0 50px 130px;
+    background-color: rgb(93, 91, 91);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: black;
+    box-shadow:0 0 20px rgba(0,0,0,0.5);
+}
